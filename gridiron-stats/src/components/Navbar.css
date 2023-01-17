@@ -11,3 +11,23 @@
 .custom-bg{
     background-color: var(--red);
 }
+
+.btn-outline-custom{
+    color: var(--offWhite);
+    background-color: var(--black);
+    border-radius: 10%;
+}
+
+.btn-custom{
+    color: var(--offWhite);
+    background-color: var(--green);
+    border-radius: 10%;
+}
+
+.custom-navlink{
+    display: block;
+    padding: 8px 10px;
+    color: var(--offWhite);
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}

@@ -6,9 +6,7 @@ function Navbar({ currentPage, handlePageChange }) {
     <nav className="navbar navbar-expand-lg custom-bg fs-5">
       <div className="container-fluid justify-content-center">
         <div className="d-flex">
-          <h1 className="mx-4">
-            Gridiron Stats
-          </h1>
+          <h1 className="mx-4">Gridiron Stats</h1>
           <button
             className="navbar-toggler mx-4"
             type="button"
@@ -26,53 +24,53 @@ function Navbar({ currentPage, handlePageChange }) {
           id="navbarNav"
         >
           <ul className="navbar-nav m-3">
-            <li className="nav-item mt-1">
+            <li className="nav-item mt-1 mx-1">
               <a
                 href="#about"
                 onClick={() => handlePageChange("About")}
                 className={
                   currentPage === "About"
-                    ? "nav-link active btn btn-primary text-reset"
-                    : "nav-link btn btn-outline-primary"
+                    ? "custom-navlink btn-custom"
+                    : "custom-navlink btn-outline-custom"
                 }
               >
                 About
               </a>
             </li>
-            <li className="nav-item mt-1">
+            <li className="nav-item mt-1 mx-1">
               <a
                 href="#portfolio"
                 onClick={() => handlePageChange("Portfolio")}
                 className={
                   currentPage === "Portfolio"
-                    ? "nav-link active btn btn-primary text-reset"
-                    : "nav-link btn btn-outline-primary"
+                    ? "custom-navlink btn-custom"
+                    : "custom-navlink btn-outline-custom"
                 }
               >
                 Portfolio
               </a>
             </li>
-            <li className="nav-item mt-1">
+            <li className="nav-item mt-1 mx-1">
               <a
                 href="#contact"
                 onClick={() => handlePageChange("Contact")}
                 className={
                   currentPage === "Contact"
-                    ? "nav-link active btn btn-primary text-reset"
-                    : "nav-link btn btn-outline-primary"
+                    ? "custom-navlink btn-custom"
+                    : "custom-navlink btn-outline-custom"
                 }
               >
                 Contact
               </a>
             </li>
-            <li className="nav-item mt-1">
+            <li className="nav-item mt-1 mx-1">
               <a
                 href="#resume"
                 onClick={() => handlePageChange("Resume")}
                 className={
                   currentPage === "Resume"
-                    ? "nav-link active btn btn-primary text-reset"
-                    : "nav-link btn btn-outline-primary"
+                    ? "custom-navlink btn-custom"
+                    : "custom-navlink btn-outline-custom text reset"
                 }
               >
                 Resume
