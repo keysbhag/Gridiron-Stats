@@ -8,7 +8,7 @@ import Footer from "./Footer";
 // import "./Main.css";
 import "animate.css";
 
-export default function Main() {
+export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState("About");
 
 //   const renderPage = () => {
@@ -27,10 +27,10 @@ export default function Main() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div className="">
+    <div className="custom-font">
       <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
-      
-      <Footer />
+      {/* <div className="main">{renderPage()}</div> */}
+      {/* <Footer /> */}
     </div>
   );
 }
