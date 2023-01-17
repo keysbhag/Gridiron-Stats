@@ -1,3 +1,13 @@
+:root {
+  /* Color pallete */
+  --black: #011627;
+  --red: #FF3366;
+  --green: #2EC4B6;
+  --offWhite: #F6F7F8;
+  --blue: #20A4F3;
+}
+
+
 .custom-bg{
-    background-color: #FF3366;
+    background-color: var(--red);
 }
