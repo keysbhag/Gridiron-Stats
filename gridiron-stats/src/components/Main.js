@@ -1,35 +1,34 @@
 import React, { useState } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-// import About from "./pages/About";
-// import Portfolio from "./pages/Portfolio";
-// import Contact from "./pages/Contact";
-// import Resume from "./pages/Resume";
-// import "./Main.css";
+import Passing from "./pages/Passing";
+import Rushing from "./pages/Rushing";
+import Receiving from "./pages/Receiving";
+import "./Main.css";
 import "animate.css";
 
 export default function PortfolioContainer() {
-  const [currentPage, setCurrentPage] = useState("About");
+  const [currentPage, setCurrentPage] = useState("Passing");
 
-//   const renderPage = () => {
-//     if (currentPage === "About") {
-//       return <About />;
-//     }
-//     if (currentPage === "Portfolio") {
-//       return <Portfolio />;
-//     }
-//     if (currentPage === "Contact") {
-//       return <Contact />;
-//     }
-//     return <Resume />;
-//   };
+
+  const renderPage = () => {
+    if (currentPage === "Passing") {
+      return <Passing />;
+    }
+    if (currentPage === "Rushing") {
+      return <Rushing />;
+    }
+    if (currentPage === "Receiving") {
+      return <Receiving />;
+    }
+  };
 
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
     <div className="custom-font">
       <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
-      {/* <div className="main">{renderPage()}</div> */}
+      <div className="main">{renderPage()}</div>
       {/* <Footer /> */}
     </div>
   );

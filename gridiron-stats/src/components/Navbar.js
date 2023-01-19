@@ -4,11 +4,11 @@ import "./Navbar.css"
 function Navbar({ currentPage, handlePageChange }) {
   return (
     <nav className="navbar navbar-expand-lg custom-bg fs-5">
-      <div className="container-fluid justify-content-center">
-        <div className="d-flex">
-          <h1 className="mx-4">Gridiron Stats</h1>
+      <div className="justify-content-center">
+        <div className="d-flex justify-content-center">
+          <h1 className="m-3 header">Gridiron Stats</h1>
           <button
-            className="navbar-toggler mx-4"
+            className="navbar-toggler mx-3"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -20,60 +20,47 @@ function Navbar({ currentPage, handlePageChange }) {
           </button>
         </div>
         <div
-          className="collapse navbar-collapse justify-content-end"
+          className="collapse navbar-collapse justify-content-center"
           id="navbarNav"
         >
-          <ul className="navbar-nav m-3">
+          <ul className="navbar-nav m-1">
             <li className="nav-item mt-1 mx-1">
               <a
                 href="#about"
-                onClick={() => handlePageChange("About")}
+                onClick={() => handlePageChange("Passing")}
                 className={
-                  currentPage === "About"
+                  currentPage === "Passing"
                     ? "custom-navlink btn-custom"
                     : "custom-navlink btn-outline-custom"
                 }
               >
-                About
+                Passing Stats
               </a>
             </li>
             <li className="nav-item mt-1 mx-1">
               <a
                 href="#portfolio"
-                onClick={() => handlePageChange("Portfolio")}
+                onClick={() => handlePageChange("Rushing")}
                 className={
-                  currentPage === "Portfolio"
+                  currentPage === "Rushing"
                     ? "custom-navlink btn-custom"
                     : "custom-navlink btn-outline-custom"
                 }
               >
-                Portfolio
+                Rushing Stats
               </a>
             </li>
             <li className="nav-item mt-1 mx-1">
               <a
                 href="#contact"
-                onClick={() => handlePageChange("Contact")}
+                onClick={() => handlePageChange("Receiving")}
                 className={
-                  currentPage === "Contact"
+                  currentPage === "Receiving"
                     ? "custom-navlink btn-custom"
                     : "custom-navlink btn-outline-custom"
                 }
               >
-                Contact
-              </a>
-            </li>
-            <li className="nav-item mt-1 mx-1">
-              <a
-                href="#resume"
-                onClick={() => handlePageChange("Resume")}
-                className={
-                  currentPage === "Resume"
-                    ? "custom-navlink btn-custom"
-                    : "custom-navlink btn-outline-custom text reset"
-                }
-              >
-                Resume
+                Receiving Stats
               </a>
             </li>
           </ul>

@@ -7,9 +7,16 @@
   --blue: #20A4F3;
 }
 
+.header{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 60px;
+    color: var(--offWhite);
+    text-shadow: #011627 2px 2px;
+}
 
 .custom-bg{
     background-color: var(--red);
+    display: block;
 }
 
 .btn-outline-custom{
