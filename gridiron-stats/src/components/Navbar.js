@@ -25,8 +25,7 @@ function Navbar({ currentPage, handlePageChange }) {
         >
           <ul className="navbar-nav m-1">
             <li className="nav-item mt-1 mx-1">
-              <a
-                href="#about"
+              <div
                 onClick={() => handlePageChange("Passing")}
                 className={
                   currentPage === "Passing"
@@ -35,11 +34,10 @@ function Navbar({ currentPage, handlePageChange }) {
                 }
               >
                 Passing Stats
-              </a>
+              </div>
             </li>
             <li className="nav-item mt-1 mx-1">
-              <a
-                href="#portfolio"
+              <div
                 onClick={() => handlePageChange("Rushing")}
                 className={
                   currentPage === "Rushing"
@@ -48,11 +46,10 @@ function Navbar({ currentPage, handlePageChange }) {
                 }
               >
                 Rushing Stats
-              </a>
+              </div>
             </li>
             <li className="nav-item mt-1 mx-1">
-              <a
-                href="#contact"
+              <div
                 onClick={() => handlePageChange("Receiving")}
                 className={
                   currentPage === "Receiving"
@@ -61,7 +58,7 @@ function Navbar({ currentPage, handlePageChange }) {
                 }
               >
                 Receiving Stats
-              </a>
+              </div>
             </li>
           </ul>
         </div>

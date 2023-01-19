@@ -23,12 +23,18 @@
     color: var(--offWhite);
     background-color: var(--black);
     border-radius: 10%;
+    cursor: pointer;
 }
 
 .btn-custom{
     color: var(--offWhite);
     background-color: var(--green);
     border-radius: 10%;
+    cursor: pointer;
+}
+
+.btn-outline-custom:hover{
+    background-color: #122738;
 }
 
 .custom-navlink{
