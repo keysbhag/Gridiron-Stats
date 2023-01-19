@@ -1,4 +1,6 @@
 import React from "react";
+import StatTable from "../StatTable";
+import stats from "../../footballWildCardResultsJson.json";
 
 export default function Passing() {
   return (
@@ -58,8 +60,9 @@ export default function Passing() {
             </li>
           </ul>
         </div>
-        <div className="stat-container d-flex justify-content-center">
+        <div className="stat-container d-flex justify-content-center flex-column align-items-center">
           <div>This is where stats will go</div>
+          <StatTable stats={stats} />
         </div>
       </div>
     </div>
